@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href={{url_for('static', filename="bootstrap.css")}} type="text/css" rel="stylesheet">
+    <title>the Triangle</title>
+</head>
+<body>
+    <nav class="navbar navbar-custom">
+        <div class="container-fluid">
+            <ul class="navbar-nav mx-auto">
+            <a class="navbar-brand" href="/">
+                <img src= {{url_for('static', filename="triangle.jpg")}} alt="Logo" width="65" height="54px" class="d-inline-block align-text-top">
+                the Triangle
+            </a>
+        </div>
+      </nav>
+
+
+      <form action="#" method="post">
+
+            <p><input type="number" name="a" placeholder="Side A" min="0" class="positioning1" </p>
+            <p><input type="number" name="b" placeholder="Side B" min="0" class="positioning2" </p>
+            <p><input type="number" name="c" placeholder="Side C" min="0" class="positioning3" </p>
+            <p><input type="number" name="A" placeholder="Angle A" min="0"  max="180" class="positioning4"</p>
+            <p><input type="number" name="B" placeholder="Angle B" min="0"  max="180" class="positioning5"</p>
+            <p><input type="number" name="C" placeholder="Angle C" min="0"  max="180" class="positioning6"</p>
+            <img src= {{url_for('static', filename="tri.jpg")}} class="triposition">
+            <p><input type="submit" value="Submit" class="positioning7"</p>
+
+      </form>
+
+    <script src={{url_for('static', filename="bootstrap.js")}} type="text/javascript"></script>
+</body>
+
+</html>
